@@ -14,6 +14,8 @@ function setDate() {
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
     minHand.style.transform = `rotate(${minutesDegrees}deg)`;
     hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+    const date = now.getDate();
+    console.log(`${date}, ${hours}, ${minutes}, ${seconds}`)
 }
 
 setInterval(setDate, 1000);
