@@ -8,6 +8,7 @@
 
   <script>
     // start with strings, numbers and booleans
+    //when you assign a string, number, boolean to another variable, it works.
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
@@ -45,6 +46,11 @@
     // and think we make a copy:
 
     // how do we take a copy instead?
+    const cap = Object.assign({}, person, {number: 99, age: 12});
+    console.log(cap);
+    console.log(person);
+
+    //OR const newObj = JSON.parse(JSON.stringify(obj));
 
     // We will hopefully soon see the object ...spread
 
